@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 #import the necessary packages
 import argparse
 from bs4 import BeautifulSoup
@@ -168,7 +162,7 @@ def pagina(url):
         
     print(len(links))
   
-    # generem el dataset escrivint en el fitxer csv "novedades_semanales_comics.csv"
+    # generem el dataset escrivint en el fitxer csv "novedades_comics.csv"
     headerList =["ISBN","Título","Precio","Autores","Colecciones","Editoriales","Series","Fecha de venta","Formato","Páginas","Nombre Imagen"]
     with open("novedades_comics.csv", 'w', newline='') as csvFile:
         writer = csv.writer(csvFile)
